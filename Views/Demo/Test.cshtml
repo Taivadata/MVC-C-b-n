@@ -1,0 +1,12 @@
+@model Customer
+
+@{
+    ViewData["Title"] = "Test";
+}
+
+
+<label asp-for="@Model.id"></label> :@Model.id
+<br>
+@Html.LabelFor(Model => Model.fullname): @Model.fullname
+<br>
+@Html.LabelFor(Model => Model.address): @Model.address
